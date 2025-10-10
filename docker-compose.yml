@@ -1,0 +1,23 @@
+services:
+  bbq:
+    build: .
+    image: bbq:latest
+    container_name: bbq
+    working_dir: /app
+    # Mount the project for live editing and to persist results
+    volumes:
+      - ./:/app
+      - hf_cache:/cache/hf
+    # Load secrets from local .env (OPENAI_API_KEY, HUGGINGFACE_TOKEN, etc.)
+    env_file:
+      - .env
+    environment:
+      - TRANSFORMERS_CACHE=/cache/hf
+    # Useful default that keeps the container running for interactive use
+    command: bash -lc "tail -f /dev/null"
+    # Uncomment if you have GPU-enabled Docker available
+    # gpus: all
+
+volumes:
+  hf_cache:
+    driver: local
