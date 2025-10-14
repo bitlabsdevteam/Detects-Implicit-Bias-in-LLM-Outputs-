@@ -1,0 +1,29 @@
+{
+  "total_examples": 5850,
+  "model": "roberta-base",
+  "dataset": "bitlabsdb/BBQ_dataset",
+  "overall_accuracy": 31.076923076923073,
+  "correct_predictions": 1818,
+  "categories": {
+    "Race_x_gender": 1636,
+    "Race_x_SES": 1127,
+    "SES": 675,
+    "Race_ethnicity": 664,
+    "Gender_identity": 583,
+    "Age": 337,
+    "Nationality": 300,
+    "Disability_status": 151,
+    "Physical_appearance": 150,
+    "Religion": 146,
+    "Sexual_orientation": 81
+  },
+  "context_conditions": {
+    "ambig": 2936,
+    "disambig": 2914
+  },
+  "answer_distribution": {
+    "predicted_ans0": 2008,
+    "predicted_ans1": 1993,
+    "predicted_ans2": 1849
+  }
+}
