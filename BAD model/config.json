@@ -1,8 +1,0 @@
-{
-  "input_dim": 2048,
-  "layer_idx": 13,
-  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
-  "best_val_bal_acc": 0.739773187525314,
-  "training_method": "GroupSplit + Standardized + Balanced",
-  "training_date": "2025-11-21T12:36:33.036470"
-}
